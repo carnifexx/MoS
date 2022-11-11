@@ -1,0 +1,16 @@
+0b7126e0c6e86d3ec295a72f5aa6e0bd
+::res://::1668174578
+game.tscn::PackedScene::3376628588965840733::1668174333::0::1::::<><>::uid://82623a2xut2q<>uid://btagl8nfv03qe
+::res://Levels/::1668169176
+::res://Levels/Outside/::1668169210
+01_forbidden_waterfall [conflicted] (conflicted).tscn::PackedScene::-1::1668169176::0::1::::<><>::
+01_forbidden_waterfall [conflicted].tscn::PackedScene::3720394412114536844::1668169176::0::1::::<><>::uid://4i4jakk7be5r
+01_Forbidden_Waterfall.png::CompressedTexture2D::2053768368415994981::1668169176::1668169210::1::::<><>::
+01_forbidden_waterfall.tscn::PackedScene::3720394412114536844::1668169176::0::1::::<><>::uid://4i4jakk7be5r
+::res://Objekte/::1668169176
+::res://Objekte/Player/::1668174333
+Camera2D (conflicted).gd::GDScript::-1::1668169176::0::1::::<>RefCounted<>::
+Camera2D.gd::GDScript::-1::1668169176::0::1::::<>Camera2D<>::
+Randy.gd::GDScript::-1::1668174333::0::1::::<>CharacterBody2D<>::
+Randy.png::CompressedTexture2D::8961465940452724071::1668169176::1668169210::1::::<><>::
+Randy.tscn::PackedScene::2373901954537980386::1668174333::0::1::::<><>::res://Objekte/Player/Randy.gd<>uid://d0xabgf6jrnhn

@@ -9,6 +9,7 @@
 
 [node name="Randy" parent="." instance=ExtResource("1_m7jhx")]
 position = Vector2(89, 146)
+speed = 50
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Randy"]
 remote_path = NodePath("../../Camera2D")
