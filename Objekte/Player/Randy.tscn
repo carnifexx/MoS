@@ -1,25 +1,9 @@
-[gd_scene load_steps=31 format=3 uid="uid://82623a2xut2q"]
+[gd_scene load_steps=26 format=3 uid="uid://82623a2xut2q"]
 
 [ext_resource type="Script" path="res://Objekte/Player/Randy.gd" id="1_7wuow"]
 [ext_resource type="Texture2D" uid="uid://d0xabgf6jrnhn" path="res://Objekte/Player/Randy.png" id="2_hxck2"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fepxt"]
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_3ifm5"]
-
-[sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_ignva"]
-
-[sub_resource type="Animation" id="Animation_t5bnk"]
-resource_name = "Idle"
-
-[sub_resource type="Animation" id="Animation_7p11n"]
-resource_name = "walking_side"
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_w0gt2"]
-_data = {
-"Idle": SubResource("Animation_t5bnk"),
-"walking_side": SubResource("Animation_7p11n")
-}
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5atyw"]
 atlas = ExtResource("2_hxck2")
@@ -107,6 +91,11 @@ region = Rect2(329, 32, 20, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x2p1x"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"New Anim",
+"speed": 5.0
+}, {
 "frames": [SubResource("AtlasTexture_5atyw"), SubResource("AtlasTexture_fm14s"), SubResource("AtlasTexture_6snbe")],
 "loop": true,
 "name": &"idle",
@@ -137,16 +126,6 @@ script = ExtResource("1_7wuow")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_fepxt")
 
-[node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource("AnimationNodeStateMachine_3ifm5")
-anim_player = NodePath("../AnimationPlayer")
-parameters/playback = SubResource("AnimationNodeStateMachinePlayback_ignva")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_w0gt2")
-}
-
 [node name="walking" type="AnimatedSprite2D" parent="."]
 frames = SubResource("SpriteFrames_x2p1x")
-animation = &"walking_down"
+animation = &"New Anim"
